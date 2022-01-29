@@ -1,0 +1,10 @@
+[Interface]
+PrivateKey = eAXq3LCe3kPmDQxFKHvZJL8/ckZ+dg6ygBmxqloA+3o=
+Address = 10.49.0.5 ,2001:db8:a160::5
+DNS =  172.28.91.76, fd00::c:5b4c 
+
+[Peer]
+PublicKey = GiwEKyuMzt01t/fOLCS4HTpcEh9QoEjAqWECyLxSxg0=
+PresharedKey = EYHvAVzxnR68QdtJeEkvQV+IaPYJih2EWQG3LvOs0tU=
+AllowedIPs = 0.0.0.0/0,::/0
+Endpoint = 3.6.30.234:51820

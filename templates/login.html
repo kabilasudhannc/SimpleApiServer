@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Token Generator</title>
+</head>
+<body>
+    <form action="/login" method="POST">
+        <input type="submit" value="Generate">
+    </form>
+    {% if token %}
+    <p>{{ token }}</p>
+    {% endif %}
+</body>
+</html>
