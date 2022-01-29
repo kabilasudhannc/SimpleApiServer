@@ -34,6 +34,7 @@ def login_required():
 
 @app.route('/home', methods=['GET', 'POST'])
 def home():
+    api_url = 'https://172.31.39.248:8000/users'
     if request.method == 'POST':
         if request.form.get('Activate') == 'Activate':
             token = request.form.get('token')
@@ -45,7 +46,7 @@ def home():
                 'country': country,
                 'operation': operation
             }
-            response = req.put(url='http://192.168.0.107:8000/users', json=params)
+            response = req.put(url=api_url, json=params)
             print(response.status_code)
 
         if request.form.get('Deactivate') == 'Deactivate':
@@ -57,7 +58,7 @@ def home():
                 'country': country,
                 'operation': operation
             }
-            response = req.put(url='http://192.168.0.107:8000/users', json=params)
+            response = req.put(url=api_url, json=params)
             print(response.status_code)
         return render_template('home.html')
 
